@@ -13,7 +13,7 @@
 </head>
 <body>
   <!-- navbar start -->
-    <header class="container mx-auto">
+    <header class="container mx-auto md:max-w-screen-md lg:max-w-screen-xl">
       <nav>
         <div class="navbar my-2 md:my-12 lg:my-12 md:border lg:border md:rounded-full lg:rounded-full md:bg-[#F85559] lg:bg-[#F85559]">
           <div class="navbar-start hidden lg:flex">
@@ -35,7 +35,7 @@
               <label tabindex="0" class="btn btn-ghost lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
               </label>
-              <ul tabindex="0" class="menu menu-xs dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-56">
+              <ul tabindex="0" class="menu menu-xs dropdown-content mt-3 z-20 p-2 shadow bg-base-100 rounded-box w-56">
                 <div class="form-control relative">
                   <input type="text" placeholder="Search here" class="border rounded-full px-4 py-2" />
                   <button class="btn btn-ghost btn-circle absolute right-4 -top-1"> 
@@ -62,7 +62,7 @@
     <main>
       <!-- Banner slide -->
       <div class="relative z-10">
-        <section class="container mx-auto">
+        <section class="container mx-auto md:max-w-screen-md lg:max-w-screen-xl">
           <div class="carousel w-full lg:h-[500px]">
             <div id="slide1" class="carousel-item relative w-full">
               <img src="./images/banner1.png" class="w-full" />
@@ -99,7 +99,7 @@
                 <h2 class=" md:text-6xl lg:text-7xl font-extrabold text-white text-center">Exotic tastes at your <br>
                   doorstep</h2>
                <p class=" text-xs md:text-lg lg:text-xl font-light md:font-medium lg:font-medium text-white py-2 md:py-4 lg:py-8">We supply highly quality organic products</p>
-               <a href="#" class="btn btn-primary btn-xs md:btn-md lg:btn-lg bg-[#F85559]">Shop Now</a>
+               <a href="#" class="btn btn-xs md:btn-mbg-[#F85559]">Shop Now</a>
               </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" class="btn btn-sm btn-circle">❮</a> 
@@ -127,31 +127,106 @@
 
       <!-- fruits section -->
       <section class="container mx-auto hidden text-center md:flex justify-center lg:flex justify-center border rounded-lg shadow-md bg-white md:max-w-screen-sm  lg:max-screen-md xl:max-w-screen-lg relative z-20 md:bottom-12 lg:bottom-16">
-        <div class="grid grid-cols-5 justify-center">
+        <div class="grid grid-cols-5 gap-6">
           <div>
-            <img src="./images/fruit1.png" alt="">
+            <img class="h-20 w-24" src="./images/fruit1.png" alt="">
             <a href="">Graps</a>
           </div>
           <div>
-            <img src="./images/fruit2.png" alt="">
+            <img class="h-20 w-24" src="./images/fruit2.png" alt="">
             <a href="">Orange</a>
           </div>
           <div>
-            <img src="./images/fruit3.png" alt="">
+            <img class="h-20 w-24"src="./images/fruit3.png" alt="">
             <a href="">Mango</a>
           </div>
           <div>
-            <img src="./images/fruit4.png" alt="">
+            <img class="h-20 w-24"src="./images/fruit4.png" alt="">
             <a href="">Strawberry</a>
           </div>
           <div>
-            <img src="./images/fruit5.png" alt="">
+            <img class="h-20 w-24"src="./images/fruit5.png" alt="">
             <a href="">Lichi</a>
           </div>
         </div>
       </section>
       <!-- fruits end -->
-      
+
+      <!-- Deal of the day start -->
+      <!-- main div -->
+      <section class="container mx-auto md:max-w-screen-md lg:max-w-screen-xl">
+        <!-- p div-1 -->
+        <div class="flex justify-center items-center">
+          <div class=" md:flex lg:flex justify-between">
+            <div class="text-center md:text-start lg:text-start py-10 md:py-0 lg:py-0 md:w-1/2 lg:w-1/2">
+              <h1 class="font-extrabold text-lg md:text-3xl lg:text-5xl">Deal of the day</h1>
+              <p class="font-medium text-xs lg:text-sm pt-4 px-6 md:px-0 lg:px-0">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div>
+              <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-center">
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-3xl md:text-5xl lg:text-5xl">
+                    <span style="--value:15;"></span>:
+                  </span>
+                  days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-3xl md:text-5xl lg:text-5xl">
+                    <span style="--value:10;"></span>:
+                  </span>
+                  hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-3xl md:text-5xl lg:text-5xl">
+                    <span style="--value:24;"></span>:
+                  </span>
+                  min
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-3xl md:text-5xl lg:text-5xl">
+                    <span style="--value:43;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- p div-2  card-->
+        <div>
+          <div class="card mx-auto w-72 md:w-80 lg:w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit6.png" alt="fruits" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <div class="card-line flex inline-flex">
+                <hr class="my-6 border-t-2 border-blue-500">
+              </div>
+              <p>Apple</p>
+              <div>
+                <div class="rating rating-sm rating-half">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                </div>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
     <footer>
 
